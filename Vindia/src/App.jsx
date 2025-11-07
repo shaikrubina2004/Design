@@ -1,11 +1,11 @@
+import Hero from "./components/Hero"
 
 
 function App() {
 
   return (
     <>
-     <h1>vindia</h1>
-   
+   <Hero/>
     </>
   )
 }
