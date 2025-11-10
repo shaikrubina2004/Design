@@ -1,0 +1,47 @@
+.about-section {
+  background-color: #505057;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.about-section h1 span {
+  color: #00d0ff;
+  font-weight: 500;
+}
+
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h2 {
+  font-size: 40px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.stat-box p {
+  margin-top: 5px;
+  font-size: 18px;
+}
