@@ -3,14 +3,16 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import backgroundVideo from "../assets/backgroundVedio/Background.mp4";
 import "./Hero.css";
+import HeroVideoSection from "./HeroVedioExpand";
 
 export default function Hero() {
   const [showSecondLine, setShowSecondLine] = useState(false);
   const [showSubtext, setShowSubtext] = useState(false);
 
   return (
-    <section className="hero-section">
-      {/* Background video with subtle zoom-in on load */}
+    <section className="hero">
+
+      {/* Background video */}
       <motion.video
         className="hero-video-bg"
         src={backgroundVideo}
@@ -20,20 +22,21 @@ export default function Hero() {
         playsInline
         initial={{ scale: 1 }}
         animate={{ scale: 1.1 }}
-        transition={{ duration: 10, yoyo: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Dimming overlay with gentle fade */}
+      {/* Subtle dim overlay */}
       <motion.div
         className="video-overlay"
         initial={{ opacity: 0.5 }}
         animate={{ opacity: 0.6 }}
-        transition={{ duration: 5, yoyo: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       />
 
-      {/* Content overlay */}
+      {/* Typed Content */}
       <div className="hero-overlay">
         <div className="hero-typed-container">
+
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -83,16 +86,6 @@ export default function Hero() {
             </motion.div>
           )}
 
-          {showSubtext && (
-            <motion.div
-              className="cta-buttons"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.5, duration: 1.5 }}
-            >
-              
-            </motion.div>
-          )}
         </div>
       </div>
     </section>
