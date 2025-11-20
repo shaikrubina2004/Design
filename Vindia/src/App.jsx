@@ -26,10 +26,11 @@ console.log("Loaded Images:", images);
 function App() {
   return (
     <>
+    
       <Home/>
-      <OverlappingCards />
+      {/* <OverlappingCards />
       <ProjectGallery images={images} />
-      <ViewOurServiceBadge/>
+      <ViewOurServiceBadge/> */}
     </>
   );
 }
