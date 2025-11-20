@@ -1,9 +1,6 @@
-import About from "./components/About";
-import HeroVideoExpand from "./components/HeroVedioExpand";
 import ProjectGallery from "./components/ProjectGallery";
 import OverlappingCards from "./components/Service/OverlappingCards";
 import ViewOurServiceBadge from "./components/ServiceBadge";
-import VerticalSlider from "./components/VerticalSlider";
 import Home from "./components/Home";
 
 // Fisher-Yates shuffle

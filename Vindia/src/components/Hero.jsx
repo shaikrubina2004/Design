@@ -3,7 +3,6 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import backgroundVideo from "../assets/backgroundVedio/Background.mp4";
 import "./Hero.css";
-import HeroVideoSection from "./HeroVedioExpand";
 
 export default function Hero() {
   const [showSecondLine, setShowSecondLine] = useState(false);
